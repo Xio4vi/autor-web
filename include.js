@@ -1,11 +1,31 @@
-fetch("includes/header.html")
-  .then(res => res.text())
-  .then(data => {
-    document.getElementById("header").innerHTML = data;
-  });
+document.addEventListener("DOMContentLoaded", () => {
 
-fetch("includes/footer.html")
-  .then(res => res.text())
-  .then(data => {
-    document.getElementById("footer").innerHTML = data;
-  });
+  /* HEADER */
+  fetch("includes/header.html")
+    .then(r => r.text())
+    .then(d => document.getElementById("header").innerHTML = d);
+
+  /* FOOTER */
+  fetch("includes/footer.html")
+    .then(r => r.text())
+    .then(d => document.getElementById("footer").innerHTML = d);
+
+  /* POPUP */
+  if (!localStorage.getItem("popupSeen")) {
+    fetch("includes/popup.html")
+      .then(r => r.text())
+      .then(d => {
+        document.body.insertAdjacentHTML("beforeend", d);
+
+        setTimeout(() => {
+          document.getElementById("popup-ad").style.display = "flex";
+        }, 3000);
+
+        document.getElementById("close-popup").addEventListener("click", () => {
+          document.getElementById("popup-ad").style.display = "none";
+          localStorage.setItem("popupSeen", "true");
+        });
+      });
+  }
+
+});
