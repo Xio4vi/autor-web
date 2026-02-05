@@ -11,9 +11,9 @@
    BASE
 ===================== */
 body {
-  font-family: "Inter", "Segoe UI", system-ui, sans-serif;
-  background: linear-gradient(180deg, #f8fafc, #eef2ff);
-  color: #1e293b;
+  font-family: "Inter", system-ui, sans-serif;
+  background: linear-gradient(180deg, #0f172a 0%, #020617 100%);
+  color: #e5e7eb;
   line-height: 1.75;
 }
 
@@ -23,45 +23,51 @@ body {
 .site-header {
   padding: 70px 20px;
   text-align: center;
-  background: #ffffff;
-  border-bottom: 1px solid #e5e7eb;
+  background: linear-gradient(
+    180deg,
+    rgba(30, 41, 59, 0.9),
+    rgba(2, 6, 23, 0.95)
+  );
+  border-bottom: 1px solid rgba(255, 255, 255, 0.08);
 }
 
 .site-header h1 {
-  font-size: 2.8rem;
+  font-size: 2.6rem;
   font-weight: 800;
   letter-spacing: -0.5px;
   margin-bottom: 22px;
-  color: #1e293b;
+  color: #e0e7ff;
 }
 
 .site-header nav {
   display: flex;
   justify-content: center;
-  gap: 32px;
+  gap: 26px;
   flex-wrap: wrap;
 }
 
 .site-header nav a {
-  color: #4f46e5;
+  color: #c7d2fe;
   text-decoration: none;
   font-weight: 500;
+  font-size: 1.05rem;
   padding-bottom: 4px;
   border-bottom: 2px solid transparent;
   transition: all 0.25s ease;
 }
 
 .site-header nav a:hover {
-  border-color: #4f46e5;
+  color: #ffffff;
+  border-color: #6366f1;
 }
 
 /* =====================
    MAIN
 ===================== */
 main {
-  max-width: 980px;
+  max-width: 1000px;
   margin: 90px auto;
-  padding: 0 22px;
+  padding: 0 24px;
 }
 
 /* =====================
@@ -69,26 +75,26 @@ main {
 ===================== */
 section {
   margin-bottom: 70px;
-  padding: 65px 55px;
-  background: #ffffff;
-  border-radius: 18px;
-  border: 1px solid #e5e7eb;
-  box-shadow: 0 20px 40px rgba(15, 23, 42, 0.08);
+  padding: 60px 55px;
+  border-radius: 22px;
+  background: rgba(15, 23, 42, 0.75);
+  border: 1px solid rgba(255, 255, 255, 0.06);
+  box-shadow: 0 25px 50px rgba(0, 0, 0, 0.45);
   text-align: center;
 }
 
 section h2 {
-  font-size: 2.2rem;
+  font-size: 2.1rem;
   font-weight: 700;
-  margin-bottom: 28px;
-  color: #1e293b;
+  margin-bottom: 26px;
+  color: #e0e7ff;
 }
 
 section p {
   font-size: 1.05rem;
   max-width: 720px;
-  margin: 0 auto 20px;
-  color: #334155;
+  margin: 0 auto 22px;
+  color: #cbd5f5;
 }
 
 /* =====================
@@ -96,18 +102,18 @@ section p {
 ===================== */
 ul {
   list-style: none;
-  max-width: 720px;
+  max-width: 700px;
   margin: 45px auto 0;
 }
 
 ul li {
-  padding: 18px 22px;
-  margin-bottom: 14px;
-  border-radius: 12px;
-  background: #f8fafc;
-  border-left: 4px solid #4f46e5;
+  padding: 20px 24px;
+  margin-bottom: 16px;
+  border-radius: 14px;
+  background: rgba(2, 6, 23, 0.9);
+  border-left: 4px solid #6366f1;
   font-weight: 500;
-  color: #1e293b;
+  color: #e5e7eb;
 }
 
 /* =====================
@@ -116,7 +122,6 @@ ul li {
 .contact-form {
   max-width: 600px;
   margin: 45px auto 0;
-  text-align: left;
 }
 
 .form-group {
@@ -125,46 +130,46 @@ ul li {
 
 .form-group label {
   display: block;
-  margin-bottom: 6px;
+  margin-bottom: 8px;
   font-weight: 600;
-  color: #1e293b;
+  color: #e0e7ff;
 }
 
 .form-group input,
 .form-group textarea {
   width: 100%;
-  padding: 14px 16px;
+  padding: 15px 16px;
   border-radius: 10px;
-  border: 1px solid #c7d2fe;
-  background: #ffffff;
-  color: #1e293b;
-  font-family: inherit;
+  background: #020617;
+  border: 1px solid #1e293b;
+  color: #e5e7eb;
+  font-size: 0.95rem;
 }
 
 .form-group input:focus,
 .form-group textarea:focus {
   outline: none;
-  border-color: #4f46e5;
-  box-shadow: 0 0 0 3px rgba(79, 70, 229, 0.15);
+  border-color: #6366f1;
+  box-shadow: 0 0 0 2px rgba(99, 102, 241, 0.25);
 }
 
 .contact-form button {
   margin: 35px auto 0;
   display: block;
-  padding: 14px 46px;
+  padding: 14px 44px;
   border-radius: 999px;
   border: none;
-  background: #4f46e5;
+  background: #6366f1;
   font-weight: 600;
   font-size: 1rem;
   color: #ffffff;
   cursor: pointer;
-  transition: background 0.25s ease, transform 0.25s ease;
+  transition: all 0.25s ease;
 }
 
 .contact-form button:hover {
-  background: #4338ca;
-  transform: translateY(-2px);
+  background: #4f46e5;
+  box-shadow: 0 12px 24px rgba(79, 70, 229, 0.4);
 }
 
 /* =====================
@@ -174,9 +179,9 @@ ul li {
   padding: 35px 20px;
   text-align: center;
   font-size: 0.9rem;
-  color: #475569;
-  background: #f8fafc;
-  border-top: 1px solid #e5e7eb;
+  color: #94a3b8;
+  background: #020617;
+  border-top: 1px solid rgba(255, 255, 255, 0.08);
 }
 
 /* =====================
@@ -186,7 +191,7 @@ ul li {
   position: fixed;
   inset: 0;
   display: none;
-  background: rgba(15, 23, 42, 0.45);
+  background: rgba(2, 6, 23, 0.8);
   align-items: center;
   justify-content: center;
   z-index: 9999;
@@ -194,22 +199,22 @@ ul li {
 
 .popup-box {
   padding: 40px;
-  max-width: 420px;
-  border-radius: 16px;
-  background: #ffffff;
-  border: 1px solid #e5e7eb;
+  border-radius: 18px;
+  background: #0f172a;
+  border: 1px solid rgba(255, 255, 255, 0.08);
   text-align: center;
+  max-width: 420px;
 }
 
 .popup-box h3 {
   font-size: 1.6rem;
   margin-bottom: 12px;
-  color: #1e293b;
+  color: #e0e7ff;
 }
 
 .popup-box p {
-  color: #334155;
-  margin-bottom: 24px;
+  color: #cbd5f5;
+  margin-bottom: 26px;
 }
 
 .popup-box button {
@@ -217,7 +222,7 @@ ul li {
   border-radius: 999px;
   border: none;
   font-weight: 600;
-  background: #4f46e5;
+  background: #6366f1;
   color: #ffffff;
   cursor: pointer;
 }
@@ -227,10 +232,10 @@ ul li {
 ===================== */
 @media (max-width: 768px) {
   section {
-    padding: 45px 30px;
+    padding: 40px 30px;
   }
 
   .site-header h1 {
-    font-size: 2.2rem;
+    font-size: 2.1rem;
   }
 }
