@@ -4,23 +4,22 @@
   <!-- Página principal -->
   <url>
     <loc>https://xio4vi.github.io/autor-web/</loc>
-    <lastmod>2026-01-29</lastmod>
     <priority>1.00</priority>
   </url>
 
-  <!-- Poemas -->
+  <!-- Obras / páginas -->
   <url>
-    <loc>https://xio4vi.github.io/autor-web/biografia.html</loc>
+    <loc>https://xio4vi.github.io/autor-web/ciudad_perros.html</loc>
     <priority>0.80</priority>
   </url>
 
   <url>
-    <loc>https://xio4vi.github.io/autor-web/obras.html</loc>
+    <loc>https://xio4vi.github.io/autor-web/la_fiesta.html</loc>
     <priority>0.80</priority>
   </url>
 
   <url>
-    <loc>https://xio4vi.github.io/autor-web/contacto.html</loc>
+    <loc>https://xio4vi.github.io/autor-web/conversacion.html</loc>
     <priority>0.80</priority>
   </url>
 
