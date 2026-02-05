@@ -1,32 +1,28 @@
-<!DOCTYPE html>
-<html lang="es">
-<head>
-  <meta charset="UTF-8">
-  <title>Autor | Inicio</title>
-  <link rel="stylesheet" href="style.css">
-</head>
-<body>
-
-<div id="header"></div>
+---
+---
+{% include header.html %}
 
 <main>
-  <section>
-  <h2>Bienvenido</h2>
-  <p>
-    Bienvenido al sitio dedicado a la vida y obra de Mario Vargas Llosa,
-    uno de los escritores más influyentes de la literatura contemporánea
-    y ganador del Premio Nobel de Literatura.
-  </p>
-  <p>
-    En este espacio encontrarás información sobre su trayectoria,
-    principales obras y su impacto en la literatura hispanoamericana.
-  </p>
-</section>
+    <h2>Biografía</h2>
+    <p>
+        Jorge Mario Pedro Vargas Llosa (1936–2023) fue un novelista, ensayista, periodista y
+        político peruano, considerado una de las figuras más influyentes de la literatura
+        en lengua española del siglo XX y XXI.
+    </p>
+    <p>
+        Fue uno de los principales exponentes del llamado <em>Boom latinoamericano</em>.
+        Su obra se caracteriza por una profunda exploración del poder, la libertad individual,
+        la violencia y las complejas relaciones sociales y políticas.
+    </p>
 
+    <h2>Obras destacadas</h2>
+    <ul>
+        <li><em>La ciudad y los perros</em> (1963)</li>
+        <li><em>La casa verde</em> (1966)</li>
+        <li><em>Conversación en La Catedral</em> (1969)</li>
+        <li><em>La guerra del fin del mundo</em> (1981)</li>
+        <li><em>La fiesta del Chivo</em> (2000)</li>
+    </ul>
 </main>
 
-<div id="footer"></div>
-
-<script src="include.js"></script>
-</body>
-</html>
+{% include footer.html %}
